@@ -1,3 +1,4 @@
+import random
 from src.participant import Participant
 from src.room import Room
 
@@ -34,6 +35,10 @@ class Building:
         got_out = []
         for room in self.rooms:
             got_out += room.guests
+            room.clear()
+        random.shuffle(got_out)
+        for partygoer in got_out:
+            self.let_in(partygoer)
 
     def vibe_check(self):
         print("Okay everybody! Vibe-Check!")

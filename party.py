@@ -26,3 +26,5 @@ cs_classroom = obs_osdorp_building.get_room("CS Classroom")
 library = obs_osdorp_building.get_room("Library")
 
 obs_osdorp_building.vibe_check()
+obs_osdorp_building.shuffle()
+obs_osdorp_building.vibe_check()

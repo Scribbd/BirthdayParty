@@ -20,6 +20,9 @@ class Room:
             print("\t{} is here! In the {}!".format(guest_name, self.name))
         else:
             print("\tNobody here in {} with that name.".format(self.name))
+    
+    def clear(self):
+        self.guests.clear()
 
     def __str__(self):
         out = "\tThis is {}, I got room for {}. Guests, introduce yourselves!\n".format(self.name, self.size)
